@@ -1,23 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="StyleCss.css"  type="text/css">
+    <!-- <link rel="stylesheet" href="StyleCss.css"  type="text/css"> -->
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        ul li {
+            list-style: none;
+        }
+        
+        body {
+            width: 100%;
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        ul {
+            height: 200px;
+            display: flex;
+        }
+        
+        li {
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            background: red;
+            margin-right: 30px;
+            margin-top: 50%;
+        }
+        
+        .f {
+            font-weight: 700;
+            font-size: 27px;
+            color: #E2B2AD;
+            margin-top: 20%;
+        }
+        
+        li:nth-child(1) {
+            background: red;
+            animation: love1 4s 0s infinite;
+        }
+        
+        li:nth-child(2) {
+            background: aqua;
+            animation: love2 4s 0.4s infinite;
+        }
+        
+        li:nth-child(3) {
+            background: blueviolet;
+            animation: love3 4s 0.8s infinite;
+        }
+        
+        li:nth-child(4) {
+            background: chocolate;
+            animation: love4 4s 1.2s infinite;
+        }
+        
+        li:nth-child(5) {
+            background: yellow;
+            animation: love5 4s 1.6s infinite;
+        }
+        
+        li:nth-child(6) {
+            background: chocolate;
+            animation: love4 4s 1.2s infinite;
+        }
+        
+        li:nth-child(7) {
+            background: blueviolet;
+            animation: love3 4s 0.8s infinite;
+        }
+        
+        li:nth-child(8) {
+            background: aqua;
+            animation: love2 4s 0.4s infinite;
+        }
+        
+        li:nth-child(9) {
+            background: red;
+            animation: love1 4s 0s infinite;
+        }
+        
+        @keyframes love1 {
+            25%,
+            50% {
+                height: 60px;
+                transform: translateY(-30px);
+            }
+            75%,
+            100% {
+                height: 0PX;
+                transform: translateY(0px);
+            }
+        }
+        
+        @keyframes love2 {
+            25%,
+            50% {
+                height: 125px;
+                transform: translateY(-60px);
+            }
+            75%,
+            100% {
+                height: 0PX;
+                transform: translateY(0px);
+            }
+        }
+        
+        @keyframes love3 {
+            25%,
+            50% {
+                height: 180px;
+                transform: translateY(-80px);
+            }
+            75%,
+            100% {
+                height: 0PX;
+                transform: translateY(0px);
+            }
+        }
+        
+        @keyframes love4 {
+            25%,
+            50% {
+                height: 200px;
+                transform: translateY(-60px);
+            }
+            75%,
+            100% {
+                height: 0PX;
+                transform: translateY(0px);
+            }
+        }
+        
+        @keyframes love5 {
+            25%,
+            50% {
+                height: 220px;
+                transform: translateY(-45px);
+            }
+            75%,
+            100% {
+                height: 0PX;
+                transform: translateY(0px);
+            }
+        }
+    </style>
 
 </head>
+
 <body>
-<ul>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-</ul>
-<div class="f">给我最爱的猪娃</div>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <div class="f">给我最爱的猪娃</div>
 </body>
+
 </html>
